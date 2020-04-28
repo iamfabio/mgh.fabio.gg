@@ -70,7 +70,7 @@ function getHeader( $title, $description, $extra_head = '', $extra_body = '' ) {
         <meta name="robots" content="noindex, nofollow">
         <meta property="og:type" content="text/html" />
         <meta property="og:url" content="<?php echo $current; ?>" />
-        <meta property="og:image" content="<?php echo $origin; ?>assets/MGH_Cropped-Thicker.png" />
+        <meta property="og:image" content="<?php echo $origin; ?>assets/images/MGH_Cropped-Thicker.png" />
         <link rel="apple-touch-icon" sizes="180x180" href="<?php echo $origin; ?>assets/favicons/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="<?php echo $origin; ?>assets/favicons/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="<?php echo $origin; ?>assets/favicons/favicon-16x16.png">
@@ -110,7 +110,7 @@ function getHeader( $title, $description, $extra_head = '', $extra_body = '' ) {
         <div class="container header-content">
             <div class="row">
                 <div class="col-12 col-md-3 logo-wrapper">
-                    <img class="logo" src="assets/MGH_Cropped-Thicker.png" alt="Logo"
+                    <img class="logo" src="assets/images/MGH_Cropped-Thicker.png" alt="Logo"
                          title="Unofficial Midnight Ghost Hunt Discord Moderation Guide" />
                 </div>
                 <div class="col-12 col-md-9 title-wrapper">
