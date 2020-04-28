@@ -79,7 +79,7 @@ function getHeader( $title, $description, $extra_head = '', $extra_body = '' ) {
         <meta name="msapplication-TileColor" content="#DA532C">
         <meta name="msapplication-config" content="<?php echo $origin; ?>assets/favicons/browserconfig.xml">
         <meta name="theme-color" content="#A678DE">
-        <link rel="stylesheet" href="<?php echo $origin; ?>fonts/web/index.css" type="text/css" />
+        <link rel="stylesheet" href="<?php echo $origin; ?>assets/fonts/web/index.css" type="text/css" />
         <link rel="stylesheet" href="<?php echo $origin; ?>css/bootstrap.min.css" type="text/css" />
         <link rel="stylesheet" href="<?php echo $origin; ?>css/style.css" type="text/css" />
         <link rel="stylesheet" href="<?php echo $origin; ?>css/responsive.css" type="text/css" />
