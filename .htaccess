@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/ 
+RewriteRule ^index\.html$ https://%{HTTP_HOST}/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\ HTTP/
+RewriteRule ^index\.html$ https://%{HTTP_HOST}/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /modmail\.html\ HTTP/ 
+RewriteRule ^modmail\.html$ https://%{HTTP_HOST}/modmail [R=301,L]
