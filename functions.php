@@ -71,13 +71,13 @@ function getHeader( $title, $description, $extra_head = '', $extra_body = '' ) {
         <meta property="og:type" content="text/html" />
         <meta property="og:url" content="<?php echo $current; ?>" />
         <meta property="og:image" content="<?php echo $origin; ?>assets/MGH_Cropped-Thicker.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="<?php echo $origin; ?>favicons/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="<?php echo $origin; ?>favicons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="<?php echo $origin; ?>favicons/favicon-16x16.png">
-        <link rel="manifest" href="<?php echo $origin; ?>favicons/site.webmanifest">
+        <link rel="apple-touch-icon" sizes="180x180" href="<?php echo $origin; ?>assets/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="<?php echo $origin; ?>assets/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="<?php echo $origin; ?>assets/favicons/favicon-16x16.png">
+        <link rel="manifest" href="<?php echo $origin; ?>assets/favicons/site.webmanifest">
         <link rel="shortcut icon" href="<?php echo $origin; ?>favicon.ico">
         <meta name="msapplication-TileColor" content="#DA532C">
-        <meta name="msapplication-config" content="<?php echo $origin; ?>favicons/browserconfig.xml">
+        <meta name="msapplication-config" content="<?php echo $origin; ?>assets/favicons/browserconfig.xml">
         <meta name="theme-color" content="#A678DE">
         <link rel="stylesheet" href="<?php echo $origin; ?>fonts/web/index.css" type="text/css" />
         <link rel="stylesheet" href="<?php echo $origin; ?>css/bootstrap.min.css" type="text/css" />
