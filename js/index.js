@@ -95,16 +95,16 @@ jQuery(function ($) {
 
     /* Soft scroll with optional offset. */
     $('a[href*=\\#]:not([href=\\#])').on('click', function (e) {
-        e.preventDefault();
-        if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
-            const offset = typeof $(this).data('offset') === 'number' ? $(this).data('offset') || 0 : parseInt($(this)
-                .data('offset'));
-            let duration = typeof $(this).data('duration') === 'undefined' ? 750 : $(this).data('duration');
-            duration = typeof duration === 'number' ? duration : (isNaN(parseInt(duration)) ? 750 : parseInt(duration));
-            let target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            if (target.length) {
-                const targetOffset = target.offset() || { left: 0, top: 0 };
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+            e.preventDefault();
+            if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
+                var offset = typeof $(this).data('offset') !== 'number' && typeof $(this)
+                        .data('offset') !== 'undefined' ? parseInt($(this).data('offset')) : $(this).data('offset') || 0,
+                    duration = typeof $(this).data('duration') === 'undefined' ? 750 : $(this).data('duration');
+                duration = typeof duration === 'number' ? duration : (isNaN(parseInt(duration)) ? 750 : parseInt(duration));
+                var targetOffset = target.offset() || { left: 0, top: 0 };
                 $('html,body').animate({
                     scrollTop: targetOffset.top ? (targetOffset.top - offset) : 0
                 }, duration);
